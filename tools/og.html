@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:630px;overflow:hidden;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    background:#ffffff;color:#16233c;position:relative}
+  .b1,.b2{position:absolute;border-radius:50%;pointer-events:none}
+  .b1{width:760px;height:760px;background:radial-gradient(circle,#8b5cf636,transparent 62%);top:-300px;right:-230px}
+  .b2{width:620px;height:620px;background:radial-gradient(circle,#f59e0b33,transparent 62%);top:190px;left:-280px}
+  .pad{position:relative;padding:46px 56px}
+  .brand{display:flex;align-items:center;gap:20px}
+  .brand img{width:92px;height:92px;border-radius:24px}
+  .brand .t{font-size:45px;font-weight:800;letter-spacing:-.5px;line-height:1.1}
+  .brand .t span{color:#8b5cf6}
+  .brand .s{font-size:19px;color:#5c6b85;margin-top:5px}
+  h1{font-size:50px;font-weight:800;line-height:1.14;letter-spacing:-1px;margin-top:28px;max-width:1060px}
+  h1 span{background:linear-gradient(95deg,#f97316,#e11d48 45%,#8b5cf6);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .row{display:flex;gap:32px;margin-top:28px;align-items:flex-start}
+  .phone{width:322px;flex:0 0 322px;background:#0f1720;border:8px solid #1b2637;
+    border-radius:28px;overflow:hidden;box-shadow:0 26px 56px #16233c33;color:#eef7f1}
+  .ph{display:flex;align-items:center;gap:10px;padding:12px 14px;
+    background:linear-gradient(180deg,#132030,#0f1720);border-bottom:1px solid #243444}
+  .ph img{width:30px;height:30px;border-radius:8px}
+  .ph b{font-size:14px}
+  .ph small{display:block;font-size:10px;color:#8fa2b6}
+  .tabs{display:flex;gap:7px;padding:11px 12px 0}
+  .tab{flex:1;text-align:center;border:1px solid #243444;background:#151f2b;color:#8fa2b6;
+    border-radius:999px;padding:8px;font-size:11.5px;font-weight:700}
+  .tab.on{background:#1ea95c;border-color:#1ea95c;color:#fff}
+  .pb{padding:12px}
+  .card{background:#151f2b;border:1px solid #243444;border-radius:12px;padding:12px}
+  .lbl{font-size:10.5px;color:#8fa2b6;margin-bottom:6px}
+  .sel{background:#1b2836;border:1px solid #243444;border-radius:9px;padding:9px 11px;font-size:13px}
+  .task{display:flex;gap:9px;align-items:flex-start;padding:10px;border:1px solid #243444;
+    border-radius:10px;background:#1b2836;margin-top:7px}
+  .task .tm{font-weight:800;color:#25d366;font-size:12px;min-width:38px}
+  .task .tj{font-weight:700;font-size:12px;text-decoration:line-through;color:#8fa2b6}
+  .tick{margin-left:auto;background:#25d366;width:26px;height:26px;border-radius:8px;
+    color:#04210f;font-size:14px;font-weight:800;text-align:center;line-height:26px}
+  .feats{flex:1;display:flex;flex-direction:column;gap:14px;padding-top:2px}
+  .feat{border-radius:18px;padding:20px 22px;display:flex;gap:15px;align-items:flex-start}
+  .feat.a{background:#fef3c7} .feat.a .ic{background:#f59e0b}
+  .feat.b{background:#d1fae5} .feat.b .ic{background:#10b981}
+  .feat .ic{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;
+    font-size:21px;flex:0 0 44px;box-shadow:0 8px 16px #16233c26}
+  .feat h3{font-size:22px;font-weight:800;margin-bottom:4px}
+  .feat p{font-size:16px;color:#4b5b74;line-height:1.4}
+  .price{margin-top:14px;display:flex;gap:10px;align-items:center;font-size:17px;font-weight:800}
+  .pill{background:#ffedd5;color:#c2410c;border-radius:999px;padding:7px 16px}
+  .pill2{background:#ede9fe;color:#6d28d9;border-radius:999px;padding:7px 16px}
+</style>
+</head>
+<body>
+<div class="b1"></div><div class="b2"></div>
+<div class="pad">
+  <div class="brand">
+    <img src="../icons/icon-512.png" alt="">
+    <div>
+      <div class="t">DYNO <span>SOP Staf</span></div>
+      <div class="s">Sistem Tugasan &amp; Reminder Automatik untuk Bisnes Anda</div>
+    </div>
+  </div>
+
+  <h1>Staf tak payah diingatkan lagi —<br><span>sistem SOP yang ingatkan mereka.</span></h1>
+
+  <div class="row">
+    <div class="phone">
+      <div class="ph">
+        <img src="../icons/icon-512.png" alt="">
+        <div><b>DYNO SOP Staf</b><small>Tugasan &amp; reminder harian</small></div>
+      </div>
+      <div class="tabs"><div class="tab on">📋 Tugasan Saya</div><div class="tab">🔒 Admin</div></div>
+      <div class="pb">
+        <div class="card">
+          <div class="lbl">Siapa anda?</div>
+          <div class="sel">Aisyah</div>
+          <div class="task"><span class="tm">08:45</span>
+            <span class="tj">🔓 Buka kedai &amp; on semua lampu</span><span class="tick">✓</span></div>
+          <div class="task"><span class="tm">08:50</span>
+            <span class="tj">☕ On mesin kopi &amp; panaskan</span><span class="tick">✓</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feats">
+      <div class="feat a"><div class="ic">🔔</div>
+        <div><h3>Reminder Automatik ke Telefon</h3>
+        <p>Alarm tugasan masuk terus ke telefon staf ikut jadual — tanpa anda sentuh apa-apa.</p></div></div>
+      <div class="feat b"><div class="ic">✅</div>
+        <div><h3>Staf Tick, Boss Nampak</h3>
+        <p>Setiap tugas siap direkod dengan masa sebenar. Bukti kerja, bukan cakap-cakap.</p></div></div>
+      <div class="price">
+        <span class="pill">RM199 bayaran permulaan</span>
+        <span class="pill2">RM99/tahun dari tahun ke-2</span>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
